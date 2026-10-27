@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gymnasium-wm-lab"
+version = "0.1.0"
+description = "A small CPU-first playground for reinforcement learning and world models with Gymnasium."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "gymnasium[atari,classic-control]>=1.0,<1.2",
+    "h5py>=3.10",
+    "imageio[ffmpeg]>=2.34",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "PyYAML>=6.0",
+    "stable-baselines3>=2.6,<3",
+    "tensorboard>=2.16",
+    "torch>=2.0",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

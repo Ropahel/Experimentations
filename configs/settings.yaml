@@ -1,0 +1,11 @@
+project:
+  default_environment: CartPole-v1
+  seed: 42
+  device: cpu
+
+storage:
+  runs_dir: data/runs
+  datasets_dir: data/datasets
+
+recording:
+  video_fps: 30

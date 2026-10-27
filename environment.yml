@@ -1,0 +1,12 @@
+name: experimentations
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - cpuonly
+  - box2d-py=2.3.8
+  - pip
+  - pip:
+      - -e .[dev]
