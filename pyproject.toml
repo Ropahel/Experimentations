@@ -3,13 +3,13 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gymnasium-wm-lab"
+name = "experimentations"
 version = "0.1.0"
-description = "A small CPU-first playground for reinforcement learning and world models with Gymnasium."
+description = "A CPU-first playground for reinforcement learning and world models with Gymnasium."
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
-    "gymnasium[atari,classic-control]>=1.0,<1.2",
+    "gymnasium[classic-control,toy-text]>=1.0,<1.2",
     "h5py>=3.10",
     "imageio[ffmpeg]>=2.34",
     "matplotlib>=3.8",

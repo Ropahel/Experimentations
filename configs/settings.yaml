@@ -1,5 +1,5 @@
 project:
-  default_environment: CartPole-v1
+  default_environment: ...
   seed: 42
   device: cpu
 

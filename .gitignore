@@ -26,3 +26,8 @@ venv/
 .idea/
 .DS_Store
 Thumbs.db
+
+# The datasets
+
+data/
+
