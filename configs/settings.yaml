@@ -1,10 +1,12 @@
 project:
-  default_environment: ...
+  default_environment: CartPole-v1
   seed: 42
   device: cpu
 
 storage:
+  # Les résultats des runs restent dans data/runs/.
   runs_dir: data/runs
+  # La racine des datasets peut être remplacée par un autre chemin.
   datasets_dir: data/datasets
 
 recording:
